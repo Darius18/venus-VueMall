@@ -1,24 +1,19 @@
+/**
+ * 大仓库
+ */
+
 import Vue from "vue";
 import Vuex from 'vuex'
 
 Vue.use(Vuex);
-const state = {
-    count:1
-};
-const mutations = {
-    add
-};
-const actions={
-    addMYcount(context){
-        context.commit('addMYcount')
-    }
-};
-const getters={
-};
+
+//引入小仓库
+import home from './home'
+import search from './search'
+
 
 export default new Vuex.Store({
-    state,
-    mutations,
-    actions,
-    getters
+    modules:{
+        home,search
+    }
 })

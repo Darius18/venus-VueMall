@@ -192,7 +192,7 @@ export default {
                         width: 25%;
 
                         .list-item {
-                            background-image: url(./images/icons.webp);
+                            background-image: url(./images/icons.png);
                             width: 61px;
                             height: 40px;
                             display: block;
